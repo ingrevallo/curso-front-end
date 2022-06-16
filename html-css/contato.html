@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Formulário Fale Conosco</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- RESET -->
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+
+	<!-- FAVICON -->
+	<link rel="icon" type="image/x-icon" href="./images/logo.svg">
+
+	<!-- GOOGLE FONTS -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:400,700" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+	<!-- Estilos Personalizados -->
+	<link rel="stylesheet" type="text/css" href="./css/layout.css">
+	<link rel="stylesheet" type="text/css" href="./css/modulo-09.css">
+
+</head>
+
+<body>
+
+	<header>
+		<h1>Fale Conosco</h1>
+	</header>
+
+	<section>
+
+		<nav>
+			<h3>Menu de Navegação</h3>
+			<ul class="navegacao">
+				<li><a href="homepage.html">HOMEPAGE</a></li>
+				<li><a href="tabelas.html">TABELAS</a></li>
+				<li><a href="contato.html">CONTATO</a></li>
+			</ul>
+		</nav>
+
+		<article>
+			<div class="card">
+				<img src="./images/logo.svg" id="card-logo">
+				<h2>Contato</h2>
+				<p>Para falar conosco, preencha o <strong>formulário</strong> abaixo ou nos chame no
+					<strong>WhatsApp</strong>!
+				</p>
+
+				<form method="post">
+
+					<div>
+						<label for="nome">Nome</label>
+						<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+					</div>
+
+					<div>
+						<label for="email">E-mail</label>
+						<input type="email" name="email" id="email" placeholder="Digite seu email">
+					</div>
+
+					<div>
+						<label for="mensagem">Mensagem</label>
+						<textarea name="mensagem" id="mensagem" rows="5"
+							placeholder="Descreva o seu projeto e como podemos ajudá-lo."></textarea>
+					</div>
+
+					<input type="submit">
+
+				</form>
+
+			</div>
+
+		</article>
+		<div id="whatsapp">
+			<a href="https://web.whatsapp.com/send?phone=5511976131084" target="_blank"><img
+					src="images/chat-whatsapp.svg" alt="WhatsApp Paulo Ingrevallo"></a>
+		</div>
+
+
+	</section>
+
+	<div class="spacer"></div>
+	<footer>
+		<p>© Desenvolvido por Ingrevallo</p>
+	</footer>
+
+</body>
+
+</html>

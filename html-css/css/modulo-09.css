@@ -1,0 +1,339 @@
+/* Importando CSS de Tabelas */
+@import url('tabelas.css');
+
+
+
+/* 
+
+	Herança
+
+	1. Sobreposição / Sobrescreve
+	2. Aplica a último estilo definido
+	3. Prioriza estilo específicas (com seletores mais próximos)
+	4. Se aplica a todas as propriedades
+
+ */
+
+
+html {
+	font-family: "Open Sans", sans-serif;
+	color: #fff;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+p {
+	color: #454545;
+}
+
+header p {
+	color: #fff;
+	font-size: 1.0em;
+}
+
+img:hover {
+	filter: grayscale();
+}
+
+img {
+	filter: drop-shadow(5px 5px 10px rgb(16, 121, 47));
+}
+
+/* 
+
+	Combinadores 
+	
+	(espaço) seletor descendente 
+	(>) combinador de seletores filhos
+	(+) combinador de elementos irmãos adjacentes / que vem logo na sequencia
+	(~) combinador de elementos irmãos geral / após elemento de referência
+
+	
+*/
+
+
+header h2 {
+	font-weight: 100;
+}
+
+
+header h1, h2, p {
+	margin-bottom: 1.5rem;
+}
+
+header h1 {
+	font-size: 1.0em;
+}
+
+header span {
+	font-size: 1.2em;	
+	background-color: rgba(150, 200, 164, 0.5);
+	padding: 5px 10px;
+	border-radius: 5%;	
+}
+
+header p {
+	font-style: italic;
+	font-size: 1.7rem;
+}
+
+
+
+
+
+/* Pseudo-classes */
+
+nav a {
+	color: #555555;
+	text-decoration: none; /* o padrão é underline */
+	font-size: 1.5rem;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+a:visited {
+	color: #f00;
+}
+
+a:active {
+	color: #096;
+}
+
+a:hover {
+	color: #009;
+}
+
+/*
+h2:hover {
+	color: rgb(12, 233, 12);
+}
+*/
+
+/* 
+	Tipografia
+*/
+
+html {
+	font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, a {
+	font-weight: 400;
+	font-family: 'Roboto Mono', monospace;
+}
+
+p {
+	font-weight: normal;
+	font-size: 1.6rem;
+}
+
+ul {
+	padding-left: .5rem;
+	margin-left: .5rem;	
+}
+
+li {
+	letter-spacing: 0.01rem;
+	font-family: 'Roboto Mono', monospace;
+	line-height: 1.5;
+}
+
+h3 {
+	/* declaração resumida / completa */
+	font: bold 2.0rem/2.2 'Roboto Mono', monospace;
+	color: #ffffff;
+}
+
+article h2, h3, p{
+	color: #fff;
+}
+
+article h2 {
+	font-size: 2.8rem;
+	
+}
+/* 
+
+	Cores
+
+*/
+
+body {
+	background: url('../images/matrix.png') center top no-repeat #EEEEEE;
+	background-size: cover;
+	
+	
+}
+
+
+
+
+
+header,
+footer {
+	background-color: #05511b;
+	
+}
+
+.spacer {
+    flex: 1 0 auto;
+}
+
+footer {
+	/*position: fixed;
+	bottom: 0;
+	width: 100%;*/
+	flex-shrink: 0;
+	margin: 0;
+	padding: 1rem;	
+}
+
+
+footer p {
+	color: rgb(255, 255, 255);
+	margin: 0px;
+}
+
+
+.navegacao {
+	padding: 2rem;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 5%;
+	
+}
+
+.navegacao li a {
+	color: white;
+	font-size: 1.4rem;
+}
+
+.navegacao li a:hover {
+	background-color: rgba(150, 200, 164, 0.5);
+	color: #f5f0f0;
+}
+
+#whatsapp {
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:20px;
+	right:20px;	
+}
+
+.card {
+
+	padding: 4rem 5%;
+	background-color: #f3f3f328;	
+}
+
+#card-logo {
+	width: 200px;
+	margin-bottom: 20px;
+}
+
+.card-ingrevallo img {
+	border: 2px solid #000;
+	border-radius: 50%;
+	width: 150px;
+	margin-bottom: 20px;
+	}
+
+.card-ingrevallo h2 {
+	margin-bottom: 1rem;
+	text-align: left;
+}
+
+#redes {
+	display: flex;
+	
+	
+}
+
+#redes img {
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	
+}
+			
+blockquote {
+	background: rgba(255, 255, 255, 0.9);
+	padding: 30px 40px 20px 40px;
+	border-radius: 10px;
+	display: inline-block
+}
+
+blockquote p {
+	font-style: italic;
+	color: #05511b;
+}
+
+blockquote #author {
+	font-style: italic;
+	color: #05511b;
+	font-weight: bold;
+}
+
+.tecnologias h3 {
+	text-align: center;
+	font-size: 2.2rem;
+}
+
+.column33 {
+	min-width: 200px;
+	width: 33%;
+	float: left;
+			
+}
+
+.column33 img {
+	display: block;
+	border: 0px;
+	border-radius: 0px;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	}
+
+	.column33 h4 {
+		font-size: 1.6em;
+		text-align: center;
+		margin-bottom: 20px;
+		
+		}
+
+@media (max-width: 600px) {
+	.column33 {
+	  width: 100%;
+	  height: auto;
+	}
+	header, footer {
+		background-color: #035da9;
+	}
+	body {
+		background: url('../images/tecnologias/fundo-celular.jpg') center top no-repeat #EEEEEE;
+		background-size: cover;		
+		
+	}
+	img {
+		filter: drop-shadow(5px 5px 10px rgb(248, 249, 249));
+	}
+	blockquote p {
+		font-style: italic;
+		color: #0c12c0;
+	}
+	blockquote #author {
+		font-style: italic;
+		color: #0c12c0;
+		font-weight: bold;
+	}
+	.card {
+		background-color: #3f6288ac;	
+	}
+  }
